@@ -22,22 +22,22 @@
       <div class="row">
         <div class="controls mt-5">
           <div class="col">
-            <div class="prev-track"><i class="fas fa-backward fa-2x"></i></div>
+            <div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward fa-2x"></i></div>
           </div>
           <div class="col">
-            <div class="playpause-track"><i class="fas fa-play fa-2x"></i><i class="fas fa-pause fa-2x"></i></div>
+            <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play fa-2x"></i><i class="fas fa-pause fa-2x"></i></div>
           </div>
           <div class="col">
-            <div class="next-track"><i class="fas fa-forward fa-2x"></i></div>
+            <div class="next-track" onclick="nextTrack()"><i class="fas fa-forward fa-2x"></i></div>
           </div>
         </div>
       </div>
       <div class="row text-center mt-3">
-          <span><p class="current-time">00:00</p> <input type="range" class="song-slider"> <p class="total-duration">00:00</p> </span>
+          <span><p class="current-time">00:00</p> <input type="range" min="1" max="100" value="0" onchange="seekUpdate()" class="song-slider"> <p class="total-duration">00:00</p> </span>
       </div>
       <div class="row text-center mt-2">
         <div class="col">
-          <span><i class="fas fa-volume-down fa-2x"></i> <input type="range" class="volume-slider"> <i class="fas fa-volume-up fa-2x"></i></span>
+          <span><i class="fas fa-volume-down fa-2x"></i> <input type="range" min="1" max="100" value="99" onchange="setVolume()" class="volume-slider"> <i class="fas fa-volume-up fa-2x"></i></span>
         </div>
       </div>
     </div>
