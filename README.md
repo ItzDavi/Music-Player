@@ -3,4 +3,4 @@
 
 JS will be added asa I got time
 
-[![GitHub issues](https://img.shields.io/github/issues/ItzDavi/JS-Super-Mario)](https://github.com/ItzDavi/JS-Super-Mario/issues) ![GitHub top language](https://img.shields.io/github/languages/top/ItzDavi/JS-Super-Mario) **![GitHub](https://img.shields.io/github/license/ItzDavi/JS-Super-Mario)** ![GitHub last commit](https://img.shields.io/github/last-commit/ItzDavi/JS-Super-Mario)
+[![GitHub issues](https://img.shields.io/github/issues/ItzDavi/Music-Player)](https://github.com/ItzDavi/Music-Player/issues) ![GitHub top language](https://img.shields.io/github/languages/top/ItzDavi/Music-Player) **![GitHub](https://img.shields.io/github/license/ItzDavi/Music-Player)** ![GitHub last commit](https://img.shields.io/github/last-commit/ItzDavi/Music-Player)
