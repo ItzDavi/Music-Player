@@ -90,7 +90,6 @@ function nextSong() {
 
 //Play button click listener
 playBtn.addEventListener("click", () => {
-  console.log("jhgfsdehjsg");
   //Is music already playing
   const isPlaying = musicContainer.classList.contains("play");
 
