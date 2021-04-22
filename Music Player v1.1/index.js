@@ -36,7 +36,7 @@ function loadSong(song) {
 
 function playSong() {
   //Add the play class
-  playBtn.classList.add("play");
+  musicContainer.classList.add("play");
 
   //Replace the play button with the pause
   playBtn.querySelector('i.fas').classList.remove('fa-play');
@@ -48,7 +48,7 @@ function playSong() {
 
 function pauseSong() {
   //Remove the play class
-  playBtn.classList.remove("play");
+  musicContainer.classList.remove("play");
 
   //Replace the pause button with the play
   playBtn.querySelector('i.fas').classList.add('fa-play');
@@ -90,11 +90,12 @@ function nextSong() {
 
 //Play button click listener
 playBtn.addEventListener("click", () => {
+  console.log("jhgfsdehjsg");
   //Is music already playing
-  //const isPlaying = playBtn.classList.contains("play");
+  const isPlaying = musicContainer.classList.contains("play");
 
   //Is music already playing ?
-  if (playBtn.classList.contains("play")) {
+  if (isPlaying) {
     //If yes, pause
     pauseSong();
   } else {
