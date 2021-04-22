@@ -36,7 +36,8 @@ function loadSong(song) {
 
 function playSong() {
   //Add the play class
-  musicContainer.classList.add("play");
+  playBtn.classList.add('play');
+  playBtn.classList.remove('pause');
 
   //Replace the play button with the pause
   playBtn.querySelector('i.fas').classList.remove('fa-play');
@@ -48,7 +49,8 @@ function playSong() {
 
 function pauseSong() {
   //Remove the play class
-  musicContainer.classList.remove("play");
+  playBtn.classList.remove('play');
+  playBtn.classList.add('pause');
 
   //Replace the pause button with the play
   playBtn.querySelector('i.fas').classList.add('fa-play');
@@ -89,11 +91,12 @@ function nextSong() {
 }
 
 //Play button click listener
-playBtn.addEventListener("click", () => {
+playBtn.addEventListener('click', () => {
   //Is music already playing
-  const isPlaying = musicContainer.classList.contains("play");
+  const isPlaying = playBtn.classList.contains("play");
 
   //Is music already playing ?
+  //if (playBtn.classList.contains('play')) {
   if (isPlaying) {
     //If yes, pause
     pauseSong();
@@ -105,7 +108,7 @@ playBtn.addEventListener("click", () => {
 
 //Previous song button click listener
 //If clicked, prev song
-prevBtn.addEventListener("click", prevSong);
+prevBtn.addEventListener('click', prevSong);
 //Next song button click listener
 //If clicked next song
-nextBtn.addEventListener("click", nextSong);
+nextBtn.addEventListener('click', nextSong);

@@ -67,6 +67,10 @@ body {
   animation-play-state: running;
 }
 
+.music-container.pause .img-container img{
+  animation-play-state: paused;
+}
+
 .navigation {
   display: flex;
   align-items: center;
