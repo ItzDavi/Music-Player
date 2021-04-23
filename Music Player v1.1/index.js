@@ -8,6 +8,7 @@ const nextBtn = document.getElementById('next');
 
 //Audio constant
 const audio = document.getElementById('audio');
+var isPlaying;
 
 //Progressbar container and progressbar
 const progressContainer = document.getElementById('progress-container');
@@ -39,6 +40,9 @@ function playSong() {
   playBtn.classList.add('play');
   playBtn.classList.remove('pause');
 
+  //Assign true value to isPlaying to stop it after
+  isPlaying = true;
+
   //Replace the play button with the pause
   playBtn.querySelector('i.fas').classList.remove('fa-play');
   playBtn.querySelector('i.fas').classList.add('fa-pause');
@@ -51,6 +55,8 @@ function pauseSong() {
   //Remove the play class
   playBtn.classList.remove('play');
   playBtn.classList.add('pause');
+
+  isPlaying = false;
 
   //Replace the pause button with the play
   playBtn.querySelector('i.fas').classList.add('fa-play');
@@ -90,10 +96,18 @@ function nextSong() {
   playSong();
 }
 
+function checkPlaying(isPlaying) {
+  if (typeof isPlaying == 'undefined') {
+    isPlaying = false;
+  } else {
+
+  }
+}
+
 //Play button click listener
 playBtn.addEventListener('click', () => {
-  //Is music already playing
-  const isPlaying = playBtn.classList.contains("play");
+  //Check for music playing
+  checkPlaying(isPlaying);
 
   //Is music already playing ?
   //if (playBtn.classList.contains('play')) {
